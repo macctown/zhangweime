@@ -5,9 +5,9 @@
     "host": "127.0.0.1"
   },
   "database": {
-    "client": "sqlite3",
+    "client": "mysql",
     "connection": {
-      "filename": "content/data/ghost-local.db"
+      "socketPath": "/var/run/mysqld/mysqld.sock"
     }
   },
   "mail": {

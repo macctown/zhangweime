@@ -1,26 +1,7 @@
 {
-  "url": "http://localhost:2368/",
-  "server": {
-    "port": 2368,
-    "host": "127.0.0.1"
-  },
-  "database": {
-    "client": "mysql",
-    "connection": {
-      "socketPath": "/var/run/mysqld/mysqld.sock"
-    }
-  },
-  "mail": {
-    "transport": "Direct"
-  },
-  "logging": {
-    "transports": [
-      "file",
-      "stdout"
-    ]
-  },
-  "process": "local",
-  "paths": {
-    "contentPath": "content"
-  }
+	"url": "https://zhangweime.herokuapp.com/",
+	"server": {
+    	"port": 2368,
+    	"host": "0.0.0.0"
+  	}
 }

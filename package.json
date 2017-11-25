@@ -15,9 +15,6 @@
     "ghost-storage-adapter-s3": "^2.3.0",
     "mysql": "^2.14.1"
   },
-  "engines": {
-    "node": "6.11.x"
-  },
   "scripts": {
     "start": "node server.js"
   }

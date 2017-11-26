@@ -1,0 +1,18 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+
+{{#get "posts" filter="tags:blog" limit="all" include="author" as |articles|}}
+  {{#foreach articles}}
+    <article class="{{post_class}}">
+	    <header class="post-header">
+	        <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
+	    </header>
+	    <section class="post-excerpt">
+	        <p>{{excerpt words="26"}} <a class="read-more" href="{{url}}">&raquo;</a></p>
+	    </section>
+	    <footer class="post-meta">
+	        <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
+	    </footer>
+	</article>
+  {{/foreach}}
+{{/get}}

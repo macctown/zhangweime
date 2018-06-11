@@ -1,5 +1,5 @@
 {{!< default}}
-{{#get "posts" limit="" include="author" filter="tags:projectspage,page:true"}}
+{{#get "posts" limit="20" include="author" filter="tags:projectspage,page:true"}}
   {{#foreach posts}}
   <main class="content" role="main">
     <article class="{{post_class}}">
